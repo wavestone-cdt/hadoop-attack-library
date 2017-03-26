@@ -14,7 +14,7 @@ This repository is composed of two kind of information and organised accordingly
 Practical hands-on
 ------------------
 If you quickly want to get your hands into the resources provided here, you might read the **following resources in that specific order:**  
-1. [Set up an Hadoop attack environment](Tools Techniques and Procedures/Setting up an Hadoop attack environment)  
+1. [Set up an Hadoop attack environment](Tools%20Techniques%20and%20Procedures%2fSetting%20up%20an%20Hadoop%20attack%20environment)  
 2. [Get the target environment configuration](Tools Techniques and Procedures/Getting the target environment configuration)  
 3. [Browse the HDFS datalake](Tools Techniques and Procedures/Browsing the HDFS datalake)  
 4. [Execute remote commands](Tools Techniques and Procedures/Executing remote commands)  
