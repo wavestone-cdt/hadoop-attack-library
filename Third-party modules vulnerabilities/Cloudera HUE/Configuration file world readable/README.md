@@ -10,7 +10,7 @@ $ ls -al /etc/hue/conf/hue.ini
 ```
   
 Several account credentials can be found in that configuration file such as:
-  * **Database account**: this might be the most interesting post-exploitation move to spoof an user identity on the datalake as [session cookies are stored in the database](../Session cookies stored in the database/)
+  * **Database account**: this might be the most interesting post-exploitation move to spoof an user identity on the datalake as [session cookies are stored in the database](../Session%20cookies%20stored%20in%20the%20database/)
   * LDAP bind account
   * SMTP service account
   * Kerberos keytab

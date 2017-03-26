@@ -9,4 +9,4 @@ http://<cloudera_manager_IP>:7180/cmf/services/<service_id_to_iterate>/client-co
 ```
 This finding may not constitute a vulnerability by itself as:
   * This behaviour can be disallowed by requiring authentication (cf. [`client_config_auth`](http://www.cloudera.com/documentation/enterprise/5-6-x/topics/cm_props_cmserver.html))
-  * Cluster configuration can also be downloaded on a [multiple Hadoop WebUI](../Getting the target environment configuration#where-to-get-the-parameter-values-)
+  * Cluster configuration can also be downloaded on a [multiple Hadoop WebUI](../Getting%20the%20target%20environment%20configuration%23where-to-get-the-parameter-values-)

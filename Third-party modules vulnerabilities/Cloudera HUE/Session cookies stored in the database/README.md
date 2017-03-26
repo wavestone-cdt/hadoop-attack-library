@@ -3,7 +3,7 @@ Session cookies stored in the database
 
 Description
 -----------
-**User session cookies are stored** in the database. Combined with the vulnerability related to [configuration file which is world readable](../Configuration file world readable/), it is possible to **spoof a user across the entire cluster launching jobs and browsing the datalake**, without having to crack password hashes.
+**User session cookies are stored** in the database. Combined with the vulnerability related to [configuration file which is world readable](../Configuration%20file%20world%20readable/), it is possible to **spoof a user across the entire cluster launching jobs and browsing the datalake**, without having to crack password hashes.
 
 Cookies are stored in the `django_session` table: `session_key` is the **cookie** and `session_data` holds the **user id with some other information encoded in base64.**
 The following example shows how to **find a valid session cookie for a specific user (id=1).**
