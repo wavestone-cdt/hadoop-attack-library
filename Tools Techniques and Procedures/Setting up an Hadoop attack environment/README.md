@@ -4,8 +4,8 @@ Setting up an Hadoop attack environment
 Description
 -----------
 This tutorial explains how to set up a working environment in order to perform attacks from the **Hadoop client CLI** such as:
-* [Browsing the HDFS datalake](../Browsing the HDFS datalake)
-* [Remote executing commands](../Executing remote commands)  
+* [Browsing the HDFS datalake](../Browsing%20the%20HDFS%20datalake)
+* [Remote executing commands](../Executing%20remote%20commands)  
 
 This tutorial is valid for a Linux environment and has been tested on Kali.
 

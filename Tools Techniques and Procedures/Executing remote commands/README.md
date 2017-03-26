@@ -8,12 +8,12 @@ This tutorial explains how to execute arbitrary commands on an Hadoop cluster
 Prerequisites
 -------------
 1. A **working attack environment**: Hadoop binaries and the target cluster configuration are needed. Follow the following tutorials to set them up: 
-  * [Setting up an Hadoop attack environment](../Setting up an Hadoop attack environment)
-  * [Getting the target environment configuration](../Getting the target environment configuration)  
+  * [Setting up an Hadoop attack environment](../Setting%20up%20an%20Hadoop%20attack%20environment)
+  * [Getting the target environment configuration](../Getting%20the%20target%20environment%20configuration)  
   
 2. Then you need to be able to access the following **Hadoop services through the network**:
   * **YARN ResourceManager**: usually on ports 8030, 8031, 8032, 8033 or 8050
-  * **NameNode metadata service** in order to [browse the HDFS datalake](../Browsing the HDFS datalake): usually on port 8020
+  * **NameNode metadata service** in order to [browse the HDFS datalake](../Browsing%20the%20HDFS%20datalake): usually on port 8020
   * **DataNode data transfer service** in order to upload/download file: usually on port 50010
   
 3. Finally you have to look up which **authentication level** is deployed, the cluster you are attacking might have:

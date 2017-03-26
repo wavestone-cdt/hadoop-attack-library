@@ -81,8 +81,8 @@ optional arguments:
 Hadoop CLI
 ----------
 Browsing the HDFS datalake can also be achieved with the **native Hadoop CLI client** after validating the following prerequisites:  
-* [Setting up an Hadoop attack environment](../Setting up an Hadoop attack environment)  
-* [Getting the target environment configuration](../Getting the target environment configuration)  
+* [Setting up an Hadoop attack environment](../Setting%20up%20an%20Hadoop%20attack%20environment)  
+* [Getting the target environment configuration](../Getting%20the%20target%20environment%20configuration)  
   
 Then, the `$ hadoop fs` command should be used, for instance:
 * `$ hadoop fs -ls /` to list the content of the root path

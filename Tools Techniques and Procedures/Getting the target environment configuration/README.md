@@ -47,7 +47,7 @@ By default they have to be placed in the following local folder on the attacker 
 <hadoop_installation>/etc/hadoop
 ```
   
-If you followed the [`Setting up an Hadoop attack environment` tutorial](../Setting up an Hadoop attack environment), it then should be placed in 
+If you followed the [`Setting up an Hadoop attack environment` tutorial](../Setting%20up%20an%20Hadoop%20attack%20environment), it then should be placed in 
 ```
 /opt/hadoop-2.7.3/etc/hadoop
 ```
