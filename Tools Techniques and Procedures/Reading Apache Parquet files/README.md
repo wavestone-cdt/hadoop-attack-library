@@ -13,7 +13,7 @@ For each of these options, guidelines are provided in [the project](https://gith
 **The quicker option is to use our pre-compiled version of `parquet-tools` in `local` mode, currently [`parquet-tools-1.8.1.jar`](parquet-tools-1.8.1.jar)**
 
 Usage
-=====
+-----
 The application consists of the following commands:
 * `cat`, to display the parquet file. Use the `--json` option to have a prettier output
 * `head`

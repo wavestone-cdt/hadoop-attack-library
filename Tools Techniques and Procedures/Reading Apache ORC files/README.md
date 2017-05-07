@@ -14,11 +14,12 @@ Four options to be able to read this format:
   
   
 Usage
-=====
+-----
 The application consists of the following commands:
 * `meta`, to read metadata
 * `data`, to print data
-* `scan`
+* `scan`  
+
 More options can be found [here](https://orc.apache.org/docs/tools.html#java-orc-tools) for future versions
 ```
 $ java -jar orc-tools-1.3.3-uber.jar --help
@@ -35,7 +36,7 @@ To get more help, provide -h to the command
 ```
 
 Example with the [TestOrcFile.test1.orc](https://github.com/apache/orc/blob/master/examples/TestOrcFile.test1.orc) file
-=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
 ```
 java -jar orc-tools-1.3.3-uber.jar data TestOrcFile.test1.orc
 log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
