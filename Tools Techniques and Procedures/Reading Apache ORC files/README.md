@@ -38,7 +38,7 @@ To get more help, provide -h to the command
 Example with the [TestOrcFile.test1.orc](https://github.com/apache/orc/blob/master/examples/TestOrcFile.test1.orc) file
 -----------------------------------------------------------------------------------------------------------------------
 ```
-java -jar orc-tools-1.3.3-uber.jar data TestOrcFile.test1.orc
+$ java -jar orc-tools-1.3.3-uber.jar data TestOrcFile.test1.orc
 log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
