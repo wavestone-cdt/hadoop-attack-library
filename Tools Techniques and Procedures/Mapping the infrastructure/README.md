@@ -35,7 +35,7 @@ Nmap from version 7.41 integrate some probes to find and recognize multiple WebU
 * **Hadoop MapReduce v2**  
 * **Hadoop YARN**  
   
-**No NSE specific script specification is needed for these, as they are bundled in the [**`nselib/data/http-fingerprints.lua`**](https://github.com/nmap/nmap/blob/master/nselib/data/http-fingerprints.lua) script.  
+No NSE specific script specification is needed for these, as they are bundled in the [**`nselib/data/http-fingerprints.lua`**](https://github.com/nmap/nmap/blob/master/nselib/data/http-fingerprints.lua) script.  
   
 Some additional NSE scripts exists in order to find some information on:
 * **MapReduce v1**: hadoop-datanode-info.nse, hadoop-jobtracker-info.nse, hadoop-namenode-info.nse, hadoop-tasktracker-info.nse, hadoop-secondary-namenode-info.nse  
