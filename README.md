@@ -16,8 +16,9 @@ Practical hands-on
 If you quickly want to get your hands into the resources provided here, you might read the **following resources in that specific order:**  
 1. [Set up an Hadoop attack environment](Tools%20Techniques%20and%20Procedures%2fSetting%20up%20an%20Hadoop%20attack%20environment)  
 2. [Get the target environment configuration](Tools%20Techniques%20and%20Procedures%2fGetting%20the%20target%20environment%20configuration)  
-3. [Browse the HDFS datalake](Tools%20Techniques%20and%20Procedures%2fBrowsing%20the%20HDFS%20datalake)  
-4. [Execute remote commands](Tools%20Techniques%20and%20Procedures%2fExecuting%20remote%20commands)  
+3. [Map the infrastructure](Tools%20Techniques%20and%20Procedures%2fMapping%20the%20infrastructure)
+4. [Browse the HDFS datalake](Tools%20Techniques%20and%20Procedures%2fBrowsing%20the%20HDFS%20datalake)  
+5. [Execute remote commands](Tools%20Techniques%20and%20Procedures%2fExecuting%20remote%20commands)  
   
 Copyright and license
 ---------------------
