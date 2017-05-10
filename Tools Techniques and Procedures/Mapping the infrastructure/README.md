@@ -5,8 +5,8 @@ Description
 -----------
 Etablishing a precise map of the target infrastructure is **crucial** as Hadoop environments expose **a lot of services**.
 The main goal is to get to know:
-* Which server holds which role: datanode, namenode and edgenode  
-* Which technologies and which third-party modules are deployed: for instance Apache HBase, Apache Hive, Apache Spark, Apache Kafka, Cloudera HUE, Apache Ranger, etc.
+* Which server holds which **role**: datanode, namenode and edgenode  
+* Which **technologies and which third-party modules** are deployed: for instance Apache HBase, Apache Hive, Apache Spark, Apache Kafka, Cloudera HUE, Apache Ranger, etc.
   * A lot of modules along with their purpose are reported on [The Hadoop Ecosystem Table](https://hadoopecosystemtable.github.io/)
   
 A good way to easily map the infrastructure is to find the WebUI:
@@ -34,6 +34,7 @@ Nmap from version 7.41 integrate some probes to find and recognize multiple WebU
 * **Cloudera Manager**  
 * **Hadoop MapReduce v2**  
 * **Hadoop YARN**  
+  
 **No NSE specific script specification is needed for these, as they are bundled in the [**`nselib/data/http-fingerprints.lua`**](https://github.com/nmap/nmap/blob/master/nselib/data/http-fingerprints.lua) script.  
   
 Some additional NSE scripts exists in order to find some information on:
