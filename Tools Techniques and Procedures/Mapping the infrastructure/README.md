@@ -35,7 +35,45 @@ Nmap from version 7.41 integrate some probes to find and recognize multiple WebU
 * **Hadoop MapReduce v2**  
 * **Hadoop YARN**  
   
-No NSE specific script specification is needed for these, as they are bundled in the [**`nselib/data/http-fingerprints.lua`**](https://github.com/nmap/nmap/blob/master/nselib/data/http-fingerprints.lua) script.  
+The probes are in [**`nselib/data/http-fingerprints.lua`**](https://github.com/nmap/nmap/blob/master/nselib/data/http-fingerprints.lua) database, used by the [http-enum](https://nmap.org/nsedoc/scripts/http-enum.html) module.  
+Here below is an extract of a nmap port scan result against an HDP Sandbox:
+```
+$ nmap -sV --script=http-enum -p- 192.168.11.150
+
+PORT      STATE SERVICE         REASON         VERSION
+6080/tcp  open  http            syn-ack ttl 64 Apache Tomcat/Coyote JSP engine 1.1
+| http-enum: 
+|   /login.jsp: Possible admin folder
+|   /login.jsp: Login page
+|_  /login.jsp: Apache Ranger WebUI
+|_http-server-header: Apache-Coyote/1.1
+
+8042/tcp  open  http            syn-ack ttl 64 Jetty 6.1.26.hwx
+| http-enum: 
+|   /logs/: Logs
+|_  /node: Hadoop YARN Node Manager version 2.7.1.2.4.0.0-169, Hadoop version 2.7.1.2.4.0.0-169
+|_http-server-header: Jetty(6.1.26.hwx)
+
+8080/tcp  open  http            syn-ack ttl 64 Jetty 8.1.17.v20150415
+| http-enum: 
+|_  /: Apache Ambari WebUI
+|_http-server-header: Jetty(8.1.17.v20150415)
+
+8088/tcp  open  http            syn-ack ttl 64 Jetty 6.1.26.hwx
+| http-enum: 
+|   /logs/: Logs
+|_  /cluster/cluster: Hadoop YARN Resource Manager version 2.7.1.2.4.0.0-169, state "started", Hadoop version 2.7.1.2.4.0.0-169
+|_http-server-header: Jetty(6.1.26.hwx)
+
+19888/tcp open  http            syn-ack ttl 64 Jetty 6.1.26.hwx
+| http-enum: 
+|   /logs/: Logs
+|_  /jobhistory: Hadoop MapReduce JobHistory WebUI
+|_http-server-header: Jetty(6.1.26.hwx)
+```  
+It has to be noted that:
+* The `-sV` nmap option is needed to correctly identify Web servers. For instance, the Hadoop JobHistory WebUI is not recognized as a Web server without `-sV`.  
+* The probes are currently inefficient against Kerberized clusters are authentication is needed to access WebUIs.  
   
 Some additional NSE scripts exists in order to find some information on:
 * **MapReduce v1**: hadoop-datanode-info.nse, hadoop-jobtracker-info.nse, hadoop-namenode-info.nse, hadoop-tasktracker-info.nse, hadoop-secondary-namenode-info.nse  
