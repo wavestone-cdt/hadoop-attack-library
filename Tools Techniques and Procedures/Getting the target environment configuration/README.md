@@ -50,7 +50,12 @@ By default they have to be placed in the following local folder on the attacker 
 If you followed the [`Setting up an Hadoop attack environment` tutorial](../Setting%20up%20an%20Hadoop%20attack%20environment), it then should be placed in 
 ```
 /opt/hadoop-2.7.3/etc/hadoop
+```  
+You can also use a custom folder and specify the path to it in an Hadoop command with the `--config` option:
 ```
+$ hadoop -h
+Usage: hadoop [--config confdir] [COMMAND | CLASSNAME]
+```  
   
   
 Where to get the parameter values ?
