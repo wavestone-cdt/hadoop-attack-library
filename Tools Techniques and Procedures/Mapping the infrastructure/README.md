@@ -76,6 +76,6 @@ It has to be noted that:
 * The probes are currently inefficient against Kerberized clusters are authentication is needed to access WebUIs.  
   
 Some additional NSE scripts exists in order to find some information on:
-* **Various stuff, mostly MapReduce v1**: hadoop-datanode-info.nse, hadoop-jobtracker-info.nse, hadoop-namenode-info.nse, hadoop-tasktracker-info.nse, hadoop-secondary-namenode-info.nse  
-* **HBase**: hbase-region-info.nse, hbase-master-info.nse  
-* **Flume**: flume-master-info.nse  
+* **Various stuff, mostly MapReduce v1**: [hadoop-datanode-info.nse](https://nmap.org/nsedoc/scripts/hadoop-datanode-info.html), [hadoop-jobtracker-info.nse](https://nmap.org/nsedoc/scripts/hadoop-jobtracker-info.html), [hadoop-namenode-info.nse](https://nmap.org/nsedoc/scripts/hadoop-namenode-info.html), [hadoop-tasktracker-info.nse](https://nmap.org/nsedoc/scripts/hadoop-tasktracker-info.html), [hadoop-secondary-namenode-info.nse](https://nmap.org/nsedoc/scripts/hadoop-secondary-namenode-info.html)  
+* **HBase**: [hbase-region-info.nse](https://nmap.org/nsedoc/scripts/hbase-region-info.html), [hbase-master-info.nse](https://nmap.org/nsedoc/scripts/hbase-master-info.html)  
+* **Flume**: [flume-master-info.nse](https://nmap.org/nsedoc/scripts/flume-master-info.html)  
