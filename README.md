@@ -8,8 +8,9 @@ A collection of pentest tools and resources targeting Hadoop environments
 Outline
 -------
 This repository is composed of two kind of information and organised accordingly:
-* **Tools, Techniques and Procedures** to attack an Hadoop environment, in the `Tools Techniques and Procedures` folder
-* **Key vulnerabilities in third-party components** often used in Hadoop environments, in the `Third-party modules vulnerabilities` folder
+* **Tools, Techniques and Procedures** to attack an Hadoop environment, in the `Tools Techniques and Procedures` folder  
+* **Key vulnerabilities on Hadoop components (Hadoop Common, HDFS, YARN etc.)**, in the `Hadoop components vulnerabilities` folder  
+* **Key vulnerabilities in third-party components** often used in Hadoop environments, in the `Third-party modules vulnerabilities` folder  
   
 Practical hands-on
 ------------------
@@ -29,7 +30,7 @@ See the GNU General Public License for more details.
 Disclaimer
 ----------
 Resources provided here are the result of security research and should not be used for illegal purposes.  
-CERT-W cannot be held responsible for any misuse or damage from any material provided here.
+Wavestone and CERT-W cannot be held responsible for any misuse or damage from any material provided here.
   
 Contact
 -------
